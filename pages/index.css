@@ -1,0 +1,290 @@
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/places/places.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/header/__links/header__links.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/_activ/header__link_activ.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__container/lead__container.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__caption/lead__caption.css);
+@import url(../blocks/intro/__container/intro__container.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__text/intro__text.css);
+@import url(../blocks/intro/__list/intro__list.css);
+@import url(../blocks/intro/__list-cell/intro__list-cell.css);
+@import url(../blocks/intro/__list-accent/intro__list-accent.css);
+@import url(../blocks/photo-grid/__image/photo-grid__image.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__website/place__website.css);
+@import url(../blocks/place/__website-url/place__website-url.css);
+@import url(../blocks/place/__website-link/place__website-link.css);
+@import url(../blocks/place/__content/place__content.css);
+@import url(../blocks/place/__text/place__text.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/cover/__container/cover__container.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+@import url(../blocks/cover/__link/cover__link.css);
+@import url(../blocks/cover/__overlay/cover__overlay.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
+@import url(../blocks/footer/__column-link/footer__column-link.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@media screen and (max-width: 1190px) {
+  .places {
+    width: calc(100% - 48px*2);
+  }
+
+  .place {
+    column-gap: 32px;
+    grid-template-columns: minmax(440px, 1fr) minmax(min-content, max-content);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    width: calc(100% - 48px*2);
+    padding-top: 48px;
+  }
+
+  .lead__subtitle  {
+    margin-bottom: 56px;
+  }
+
+  .intro {
+    width: calc(100% - 48px*2);
+  }
+
+  .intro__text {
+    margin-bottom: 33px;
+  }
+
+  .intro__list-cell {
+    font-weight: 400;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 14px;
+  }
+
+  .cover__link {
+    padding: 232px 195px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .places {
+    width: calc(100% - 24px*2);
+  }
+
+  .place {
+    margin-bottom: 73px;
+    column-gap: 28px;
+    grid-template-columns: minmax(340px, 1fr) minmax(min-content, max-content);
+  }
+
+  .place:last-child {
+    margin-bottom: 90px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .place__text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin-left: 28px;
+  }
+
+  .header__links {
+    margin-right: 28px;
+  }
+
+  .lead {
+    width: 100%;
+  }
+
+  .lead__caption {
+    margin-left: 24px;
+  }
+
+  .intro {
+    width: calc(100% - 24px*2);
+  }
+
+  .intro__title {
+    margin-top: 88px;
+  }
+
+  .photo-grid {
+    padding: 88px 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+  }
+
+  .cover__link {
+    padding: 115px 104px;
+  }
+
+  .footer {
+    width: calc(100% - 24px*2);
+    padding-top: 88px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .lead__subtitle {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .lead__title {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .intro__title {
+    margin-top: 64px;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .place {
+    margin: 0 auto;
+    gap: 32px;
+    grid-template-areas:
+    "title"
+    "website"
+    "image"
+    "text";
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .footer {
+    width: calc(100% - 16px*2);
+    min-height: 310px;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .footer__column-links {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer__column-link {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .footer__copyright {
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 142px;
+    height: 42px;
+  }
+
+  .header__links {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+
+  .lead {
+    width: calc(100% - 2px*2);
+  }
+
+  .lead__caption {
+    margin-left: 16px;
+  }
+
+  .intro {
+    width: calc(100% - 16px*2);
+  }
+
+  .photo-grid {
+    padding: 64px 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 12px;
+  }
+
+  .places {
+    width: 100%;
+  }
+
+  .place {
+    grid-template-columns: 320px;
+    overflow: hidden;
+  }
+
+  .place:last-child {
+    margin-bottom: 66px;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 1.1;
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .place__text {
+    padding: 0 16px 0;
+  }
+
+  .place__website {
+    padding: 0 16px 0;
+  }
+
+  .cover__link {
+    padding: 0;
+    margin-bottom: 64px;
+  }
+
+  .cover__title {
+    margin: 33px 16px 0;
+  }
+
+  .cover__subtitle {
+    margin: 16px 16px 33px;
+  }
+}

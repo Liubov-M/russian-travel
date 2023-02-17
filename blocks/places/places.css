@@ -1,0 +1,6 @@
+.places {
+  width: calc(100% - 148px*2);
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 0;
+}
