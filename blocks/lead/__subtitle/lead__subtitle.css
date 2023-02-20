@@ -7,3 +7,24 @@
   margin-top: 32px;
   margin-bottom: 64px;
 }
+
+@media screen and (max-width: 1024px) {
+  .lead__subtitle  {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .lead__subtitle {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .lead__subtitle {
+    width: 288px;
+    margin-top: 19px;
+  }
+}

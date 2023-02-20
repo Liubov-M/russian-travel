@@ -1,6 +1,23 @@
 .places {
   width: calc(100% - 148px*2);
-  list-style: none;
   margin: 0 auto;
   padding-left: 0;
+}
+
+@media screen and (max-width: 1190px) {
+  .places {
+    width: calc(100% - 48px*2);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .places {
+    width: calc(100% - 24px*2);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .places {
+    width: 100%;
+  }
 }

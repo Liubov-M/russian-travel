@@ -2,4 +2,18 @@
   background-color: #2A2C2F;
   display: flex;
   justify-content: space-between;
+  width: calc(100% - 48px*2);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: calc(100% - 24px*2);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    width: calc(100% - 16px*2);
+  }
 }

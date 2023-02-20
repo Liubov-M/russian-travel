@@ -2,6 +2,20 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
-  margin: 32px auto;
+  margin: 32px auto 0;
   max-width: 360px;
+}
+
+@media screen and (max-width: 740px) {
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cover__subtitle {
+    margin-top: 16px;
+    max-width: 288px;
+  }
 }
