@@ -12,9 +12,7 @@
   .place__title {
     font-size: 42px;
     line-height: 1.1;
-  }
-  .place__title_small {
-    width: 300px;
+    width: 330px;
   }
 }
 
